@@ -258,9 +258,6 @@ header p{
     border-radius: 50%;
     position: absolute;
 }
-.scoreContent.tonalAnalysis{
-	padding: 20px;
-}
 .scoreContent.tonalAnalysis .tonality{
 	background: #FEFAF4;
 	border-radius: 10px;
@@ -321,5 +318,296 @@ header p{
     margin-right: 0;
 	margin-bottom: 10px;
 }
+/*五行八字*/
+.scoreContent.fiveEight{
+	padding: 0;
+}
+.fiveEight table tr td{
+	border-bottom: 1px solid #FFC5BB;
+	border-right: 1px solid #FFC5BB;
+	padding: 10px;
+	color: #000;
+}
+.fiveEight table tr:last-child td{
+	border-bottom: none;
+}
+.fiveEight table tr td:last-child{
+	border-right: none;
+}
+.fiveEight table tr:first-child td,
+.fiveEight table tr td:first-child{
+	color: #531414;
+}
+.littleKnowledge{
+	position: relative;
+	border-bottom: 1px solid #D2D2D2;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.littleKnowledge:last-child{
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.littleKnowledgeBg{
+	width: 55px;
+	height: 69px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.goldBg{
+	background: url(../img/gold.png);
+	background-size:100% 100% ;
+}
+.woodBg{
+	background: url(../img/wood.png);
+	background-size:100% 100% ;
+}
+.waterBg{
+	background: url(../img/water.png);
+	background-size:100% 100% ;
+}
+.fireBg{
+	background: url(../img/fire.png);
+	background-size:100% 100% ;
+}
+.soilBg{
+	background: url(../img/soil.png);
+	background-size:100% 100% ;
+}
+.gold,.wood,.water,.fire,.soil{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.gold{
+	color: #EC6941;
+}
+.wood{
+	color: #448ACA;
+}
+.water{
+	color: #80C269;
+}
+.fire{
+	color: #13B5B1;
+}
+.soil{
+	color: #556FB5;
+}
+.gold>span,.wood>span,.water>span,.fire>span,.soil>span{
+	color: #999;
+    font-weight: normal;
+    padding-left: 5px;
+    font-size: 12px;
+}
+/*诗词典故*/
+.poetry{
+	padding: 20px;
+}
+.poetry p{
+	color: #000;
+	font-weight: 500;
+	display: flex;
+	padding-bottom: 20px;
+}
+.poetry p span:first-child{
+	color: #9D544D;
+}
+.poetry p span:last-child{
+	flex: 1;
+	font-size: 12px;
+}
+/*三才五格*/
+.threeFive .rightTitle{
+	font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #8d443d;
+}
+.backgroundCircle { 
+	width: 140px;
+	height: 140px;
+    box-sizing: border-box; 
+    padding: 18px; 
+    border-radius: 50%; 
+    background-image: -webkit-linear-gradient(60deg, #FFEBD6, #FFD1F4, #D9D0FF);  
+	margin: 30px auto;
+	position: relative;
+}
+.circle { 
+	width:100%; 
+    height:100%; 
+    border-radius:50%; 
+    background:#fff; 
+}
+.circle p{
+	display: flex;
+    flex-direction: column;
+	color: #8b4039;
+}
+.circle p span:first-child{
+	transform: scale(0.7);
+    font-size: 12px;
+}
+.circle p span:last-child{
+	font-size: 16px;
+}
+.BigInclusion p:first-child{
+	position: absolute;
+    left: 50%;
+    top: -35px;
+    margin-left: -15px;
+}
+.BigInclusion p:nth-child(2){
+	position: absolute;
+    left: -25%;
+    top: 65%;
+
+}
+.BigInclusion p:last-child{
+	position: absolute;
+    right: -25%;
+    top: 65%;
+}
+.BigInclusion p{
+	font-weight: bold;
+	font-size: 18px;
+	color: #8B4039;
+}
+.inclusion p{
+	color: #8b4039;
+}
+.inclusion p:first-child{
+	position: absolute;
+    left: 50%;
+    top: 0;
+	margin-left: -7px;
+}
+.inclusion p:nth-child(2){
+	position: absolute;
+    left: 8%;
+    top: 65%;
+
+}
+.inclusion p:last-child{
+	position: absolute;
+    right: 8%;
+    top: 65%;
+}
+.fivegrid{
+	background: #FEFAF4;
+    border-radius: 10px;
+    padding: 20px 0;
+    margin-bottom: 15px;
+}
+.fivegridBg{
+	background: url(../img/fivegrid.png);
+	background-size:100% 100% ;
+	width: 133px;
+	height: 72px;
+	margin: 0 10px;
+}
+.fivegridBg p:first-child{
+	padding-right: 22px;
+}
+.fivegrid p,.fivegrid .total{
+	font-weight: 500;
+	color: #8B4039;
+}
+.fivegrid .list-style-26 {
+	line-height: 26px;
+}
+.fivegrid .total{
+	border-top: 1px solid #f3e1db;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+/*周易卦象*/
+.hexagram{
+	margin-bottom: 20px;
+}
+.hexagram .detailed>p{
+	font-size: 18px;
+	color: #326473;
+	font-weight: bold;
+	margin: 10px 0 10px -10px;
+}
+.hexagram .detailed:first-child>p{
+    margin-left: 20px;
+}
+.hexagram .detailed .details{
+    margin-bottom: 10px;
+}
+
+.hexagram .detailed .details p{
+	font-size: 12px;
+}
+.hexagram .detailed .details .c-green{
+	color: #326473;
+}
+.hexagram .detailed .details .c-yellow{
+	color: #F8B551;
+}
+.hexagram .detailed .details .c-blue{
+	color: #448ACA;
+}
+.hexagram .detailed .details .c-purple{
+	color: #8957A1;
+}
+
+.hexagram .detailed .details p span{
+
+}
+.hexagram .detailed .details p img{
+	width: 60px;
+	height: 25px;
+	margin: 0 5px;
+}
+.hexagram .detailed:first-child .bottomText{
+	margin: 0 14px 0 24px;
+}
+	
+.hexagram .detailed .bottomText{
+	margin: 0 12px 0 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+/*生肖凶吉*/
+.zodiacTitle{
+	background: url(../img/zodiacBg.png);
+	background-size:100% 100% ;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	margin: 5px auto 20px auto;
+}
+.personality>p{
+	font-size: 12px;
+	font-weight: bold;
+	color: #F19149;
+}
+.personality>ul{
+	margin: 10px 0 10px 20px;
+}
+.personality>ul>li{
+	background: #F19149;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    margin-right: 16px;
+    font-size: 12px;
+}
+.personality.green>p{
+	color: #80C269;
+}
+.personality.green>ul>li{
+	background: #80C269;
+}
+
+
 	
 	
