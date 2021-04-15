@@ -163,7 +163,7 @@ button{
 	color: #666!important;
 }
 .c-pink{
-	color: #F74B8C!important;;
+	color: #f7446e!important;;
 }
 
 .border-right{
@@ -292,6 +292,10 @@ button{
 	}
 	.fivegridBg {
 		width: 110px!important;
+	}
+	.mask .lockButton{
+		margin-left: -140px!important;
+		width: 280px!important;
 	}
 }
 
