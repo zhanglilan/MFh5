@@ -13,6 +13,13 @@ body {
 	color: #333;
 	background: #fefaf4;
 }
+/*方正楷体开始*/
+@font-face
+{
+	font-family: myFirstFont;
+	src: url('../fonts/FZKTJW.TTF')
+}
+/*方正楷体结束*/
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -209,7 +216,7 @@ button{
 	font-size: 16px;
 }
 .font18 {
-	font-size: 18px;
+	font-size: 18px!important;
 }
 .font20 {
 	font-size: 20px;
@@ -246,6 +253,9 @@ button{
 }
 .p-b-10{
 	padding-bottom: 10px;
+}
+.m-l--15{
+	margin-left: -15px;
 }
 .m-r-0{
 	margin-right: 0!important;
