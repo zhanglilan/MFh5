@@ -839,6 +839,386 @@ header p{
 .textIndent::before{
 	display: none!important;
 }
+/*名字推荐*/
+.titleTab{
+	font-weight: 500;
+	color: #999;
+    background: #fff;
+    width: 100%;
+    height: 40px;
+	line-height: 40px;
+	position: fixed;
+	top: 45px;
+    padding: 0 15px;
+	z-index: 1;
+}
+.titleTab ul li{
+	position: relative;
+}
+.titleTab ul li.active::before{
+	content: "";
+	background: #EC5141;
+	width: 100%;
+	height: 3px;
+	border-radius: 4px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	bottom: 0;
+}
+.contentTabList {
+	margin: 15px;
+    padding-top: 30px;
+}
+.freeRecommend{
+}
+.freeRecommend li{
+	background: #FFFFFF;
+	box-shadow: 0px 2px 15px 0px rgba(233, 212, 180, 0.5);
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0;
+	
+}
+.freeRecommend .nameResolutionContent .nameResolution p:nth-child(2){
+	font-size: 24px;
+}
+.freeRecommend .nameResolutionContent .nameResolution img{
+	margin-top: 30px;
+	position: relative;
+    top: -3px;
+}
+.freeRecommend .score p:first-child {
+    font-size: 30px;
+    line-height: 28px;
+}
+.freeRecommend .score p:last-child {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+}
+.freeRecommend .score{
+	margin-top: -25px;
+	text-align: right;
+    margin-right: 20px;
+}
+.collection a{
+	position: relative;
+	justify-content: flex-end;
+    margin-top: -18px;
+	padding-right: 20px;
+}
+.collection a::before{
+	content: "";
+    width: 100%;
+    height: 1px;
+    background: #e7e7e7;
+    position: absolute;
+    left: 0;
+    top: -8px;
+}
+.collection img{
+	width: 15px;
+    height: 14px;
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+}
+.freeRecommend li .collection img.default,.freeRecommend li.current .collection img.active{
+	display: block;
+}
+.freeRecommend li .collection img.active,.freeRecommend li.current .collection img.default{
+	display: none;
+}
+.recommendContent,.upgrade,.optimal{
+	width: 320px;
+	height: 370px;
+	padding: 25px 20px;
+    margin: 15px auto;
+}
+.recommendContent{
+	background: url(../img/recommendGg1.png);
+	background-size: 100% 100%;
+}
+.recommendContent.upgrade{
+	background: url(../img/recommendGg2.png);
+	background-size: 100% 100%;
+}
+.recommendContent.optimal{
+	background: url(../img/recommendGg3.png);
+	background-size: 100% 100%;
+}
+.recommendContent h1{
+	font-weight: bold;
+	color: #000000;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	padding: 0 5px 0 2px;
+	margin-bottom: 10px;
+}
+.recommendContent h1::before{
+	content: "";
+	background: #facd89;
+	width: 100%;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	top: 15px;
+    left: 0;
+    z-index: -1;
+}
+.recommendContent.upgrade h1::before{
+	content: "";
+	background: #EC6941;
+}
+.recommendContent>p{
+	position: relative;
+	font-size: 12px;
+	color: #000000;
+	line-height: 22px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+.recommendContent>p::before{
+	content: "";
+	display: inline-block;
+    left: 0;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+	border:2px solid #FACD89;
+    border-radius: 50%;
+    position: absolute;
+}
+.recommendContent.upgrade>p::before{
+	content: "";
+	background: transparent;
+	border:2px solid #EC6941;
+}
+.recommendButton{
+	margin-top: 10px;
+	text-align: center;
+}
+.recommendButton p{
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 10px;
+}
+.recommendButton p span.c-gray{
+	font-weight: normal;
+}
+.recommendButton button{
+	width: 80%;
+	height: 40px;
+	background: linear-gradient(90deg, #F96784 0%, #FF8A66 97%);
+	box-shadow: 0px 1px 10px 0px rgba(203, 90, 84, 0.8);
+	border-radius: 5px;
+	color: #fff;
+}
+.setMeal{
+	background: url(../img/setMeal.png);
+	width: 100%;
+	height: 80px;
+	background-size: 100% 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: right;
+    line-height: 116px;
+}
+.setMeal button{
+	width: 140px;
+	height: 30px;
+	background: linear-gradient(90deg, #FB6E7E 0%, #FD7E70 100%);
+	box-shadow: 0px 1px 10px 0px rgba(203, 90, 84, 0.8);
+	border-radius: 10px;
+	color: #fff;
+	/*方正楷体*/
+	font-family:myFirstFont;
+	animation: setMealButton 1s linear alternate infinite;
+	margin-right: 50px;
+}
+.setMeal button span{
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFFC00;
+}
+@keyframes setMealButton{
+    0%{transform:scale(0.9);}
+    100%{transform:scale(1);}
+}
+.recommendContent.optimal h1{
+	background: url(../img/recommendTitle.png);
+	width: 100%;
+	height: 59px;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 65px;
+    padding: 0;
+    font-size: 30px;
+    color: #86190f;
+	/*方正楷体*/
+	font-family:myFirstFont;
+}
+.recommendContent.optimal h1::before{
+	content: "";
+	display: none;
+}
+.recommendContent.optimal ul{
+	padding-bottom: 15px;
+}
+.recommendContent.optimal ul li{
+	width: 25%;
+	text-align: center;
+    margin: 8px 0;
+
+}
+.recommendContent.optimal ul li img {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 5px;
+
+}
+.recommendContent.optimal ul li p{
+	color: #86190F;
+	font-weight: 500;
+	font-size: 12px;
+}
+/*起名支付*/
+.orderPayment{
+	padding: 15px;
+}
+.orderList,.solutionRecord{
+	background: #FFFFFF;
+	box-shadow: 0px 2px 10px 0px rgba(222, 222, 222, 0.8);
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+.orderList>h1{
+	font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.orderList>p{
+	color: #000;
+	font-size: 12px;
+	line-height: 26px;
+}
+.orderList .amount p{
+	color: #000;
+    font-weight: 500;
+}
+.orderList .amount p.red{
+	color: #BA3B2E;
+}
+.orderList .amount p span{
+	font-size: 12px;
+	color: #999;
+	text-decoration: line-through;
+}
+.orderList ul li {
+	padding: 12px 0;
+}
+.orderList ul li p img{
+	width: 25px;
+	height: 25px;
+}
+.orderList ul li p span{
+	padding-left: 10px;
+}
+.orderList ul li  div img{
+	width: 21px;
+	height: 21px;
+}
+.orderList ul li  div img:first-child, .orderList ul li.active div img:last-child {
+    display: block;
+}
+.orderList ul li div img:last-child, .orderList ul li.active div img:first-child {
+    display: none;
+}
+.button{
+	width: 80%;
+	height: 40px;
+	background: linear-gradient(90deg, #F96784 0%, #FF8A66 100%);
+	box-shadow: 0px 1px 10px 0px rgba(203, 90, 84, 0.6);
+	border-radius: 5px;
+	color: #fff;
+}
+/*个人中心*/
+.myInfo ul li{
+	border-bottom:1px solid #DCDCDC;
+	padding: 15px 0;
+}
+.myInfo ul li:first-child{
+	padding: 0 0 10px 0;
+}
+.solutionRecord h1{
+	font-size: 30px;
+    color: #000;
+    font-weight: 500;
+    border-right: 1px solid #E5E5E5;
+    display: inline-block;
+    padding-right: 10px;
+	margin-right: 10px;
+}
+.solutionRecord .h1Bg{
+	background: url(../img/textBg.png);
+	background-size: 100%;
+	width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    padding-right: 0;
+    position: relative;
+    margin-right: 20px;
+    border-right: none;
+}
+.solutionRecord .h1Bg::after{
+	content: '';
+    border-right: 1px solid #E5E5E5;
+    position: absolute;
+    right: -10px;
+    top: 5%;
+    width: 1px;
+    height: 90%;
+}
+.solutionRecord div p{
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+}
+.solutionRecord a{
+	width: 70px;
+	height: 30px;
+	display: inline-block;
+	background: linear-gradient(90deg, #FF6686 0%, #FE8076 100%);
+	box-shadow: 0px 2px 8px 0px rgba(211, 173, 173, 0.8);
+	border-radius: 5px;
+	color: #fff;
+	line-height: 30px;
+    text-align: center;
+}
+.customer{
+	padding-top: 25px;
+}
+.customer img{
+	width: 83px;
+	height: 73px;
+}
+.customer p{
+	font-size: 18px;
+	font-weight: 500;
+	color: #333;
+	padding: 25px;
+}
+
 
 
 
