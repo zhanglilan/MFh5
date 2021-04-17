@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/mian.css" />
+	<title>app</title>
+</head>
+
+<body>
+	<section>
+		<header class="df ac jsb">
+			<a href="javascript:history.go(-1);"><img width="15" height="15" src="img/arrow.png" /></a>
+			<p class="flex-1 text-center m-l--15">我的订单</p>
+		</header>
+		<section class="content">
+			<div class="">
+				<div class="titleTab">
+					<ul class="df ac jc text-center">
+						<li class="active flex-1">全部</li>
+						<li class="flex-1">进行中</li>
+						<li class="flex-1">已完成</li>
+					</ul>
+				</div>
+				<div class="contentTab p-t-10">
+					<!--全部-->
+					<div class="contentTabList p-l-r-10 show">
+						<ul class="myOrder">
+							<!--未支付li增加“unpaid”，套餐类型：解名li增加“setMealTwo”-->
+							<li>
+								<p class="titleNum df jsb">
+									<span>订单编号：898751265981221</span>
+									<span>【已支付】</span>
+								</p>
+								<div class="setMealLeft df ac">
+									<p class="textBg">王</p>
+									<p class="df fc">
+										<span>套餐类型：满分好名</span>
+										<span>下单时间：2021-3-19  14:43:49</span>
+									</p>
+								</div>
+								<p class="text-right">金额<span class="font12 c-gray">￥</span><span>28.00</span></p>
+								<div class="orderButton"><a href="#"><button>订单详情</button></a></div>
+							</li>
+							<li class="unpaid">
+								<p class="titleNum df jsb">
+									<span>订单编号：898751265981221</span>
+									<span>【未支付】</span>
+								</p>
+								<div class="setMealLeft df ac">
+									<p class="textBg">王</p>
+									<p class="df fc">
+										<span>套餐类型：满分好名</span>
+										<span>下单时间：2021-3-19  14:43:49</span>
+									</p>
+								</div>
+								<p class="text-right">金额<span class="font12 c-gray">￥</span><span>28.00</span></p>
+								<div class="orderButton">
+									<a href="#"><button>取消订单</button></a>
+									<a href="#"><button>去支付</button></a>
+								</div>
+							</li>
+							<li class="setMealTwo">
+								<p class="titleNum df jsb">
+									<span>订单编号：898751265981221</span>
+									<span>【已支付】</span>
+								</p>
+								<div class="setMealLeft df fc afs">
+									<p>套餐类型：解名</p>
+									<p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：张三</p>
+									<p>下单时间：2021-3-19  14:43:49</p>
+								</div>
+								<p class="text-right">金额<span class="font12 c-gray">￥</span><span>28.00</span></p>
+								<div class="orderButton"><a href="#"><button>订单详情</button></a></div>
+							</li>
+							<li class="unpaid setMealTwo">
+								<p class="titleNum df jsb">
+									<span>订单编号：898751265981221</span>
+									<span>【未支付】</span>
+								</p>
+								<div class="setMealLeft df fc afs">
+									<p>套餐类型：解名</p>
+									<p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：张三</p>
+									<p>下单时间：2021-3-19  14:43:49</p>
+								</div>
+								<p class="text-right">金额<span class="font12 c-gray">￥</span><span>28.00</span></p>
+								<div class="orderButton">
+									<a href="#"><button>取消订单</button></a>
+									<a href="#"><button>去支付</button></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--进行中-->
+					<div class="contentTabList p-l-r-10 hide">
+						<ul class="myOrder">
+							<li class="unpaid">
+								<p class="titleNum df jsb">
+									<span>订单编号：898751265981221</span>
+									<span>【未支付】</span>
+								</p>
+								<div class="setMealLeft df ac">
+									<p class="textBg">王</p>
+									<p class="df fc">
+										<span>套餐类型：满分好名</span>
+										<span>下单时间：2021-3-19  14:43:49</span>
+									</p>
+								</div>
+								<p class="text-right">金额<span class="font12 c-gray">￥</span><span>28.00</span></p>
+								<div class="orderButton">
+									<a href="#"><button>取消订单</button></a>
+									<a href="#"><button>去支付</button></a>
+								</div>
+							</li>
+							<li class="unpaid setMealTwo">
+								<p class="titleNum df jsb">
+									<span>订单编号：898751265981221</span>
+									<span>【未支付】</span>
+								</p>
+								<div class="setMealLeft df fc afs">
+									<p>套餐类型：解名</p>
+									<p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：张三</p>
+									<p>下单时间：2021-3-19  14:43:49</p>
+								</div>
+								<p class="text-right">金额<span class="font12 c-gray">￥</span><span>28.00</span></p>
+								<div class="orderButton">
+									<a href="#"><button>取消订单</button></a>
+									<a href="#"><button>去支付</button></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--已完成-->
+					<div class="contentTabList p-l-r-10 hide">
+						<ul class="myOrder">
+							<li>
+								<p class="titleNum df jsb">
+									<span>订单编号：898751265981221</span>
+									<span>【已支付】</span>
+								</p>
+								<div class="setMealLeft df ac">
+									<p class="textBg">王</p>
+									<p class="df fc">
+										<span>套餐类型：满分好名</span>
+										<span>下单时间：2021-3-19  14:43:49</span>
+									</p>
+								</div>
+								<p class="text-right">金额<span class="font12 c-gray">￥</span><span>28.00</span></p>
+								<div class="orderButton"><a href="#"><button>订单详情</button></a></div>
+							</li>
+							<li class="setMealTwo">
+								<p class="titleNum df jsb">
+									<span>订单编号：898751265981221</span>
+									<span>【已支付】</span>
+								</p>
+								<div class="setMealLeft df fc afs">
+									<p>套餐类型：解名</p>
+									<p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：张三</p>
+									<p>下单时间：2021-3-19  14:43:49</p>
+								</div>
+								<p class="text-right">金额<span class="font12 c-gray">￥</span><span>28.00</span></p>
+								<div class="orderButton"><a href="#"><button>订单详情</button></a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script>
+		$(function(){
+			 $('.titleTab').on('click', 'li', function() {
+	            var i = $(this).index();
+	            $(this).addClass('active').siblings().removeClass('active');
+	            $(".contentTab>div").eq(i).show().siblings().hide();
+	        });
+		});
+	</script>
+</body>
+
+</html>

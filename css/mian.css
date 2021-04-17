@@ -1218,7 +1218,74 @@ header p{
 	color: #333;
 	padding: 25px;
 }
+/*我的订单*/
+.myOrder{
 
+}
+.myOrder li {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px 0px rgb(233 212 180 / 50%);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.myOrder li p.titleNum{
+	padding-bottom: 10px;
+    border-bottom: 1px solid #DCDCDC;
+    color: #666;
+    font-size: 12px;
+	margin-bottom: 10px;
+}
+.myOrder li .setMealLeft .textBg{
+	width: 35px;
+    height: 35px;
+    font-size: 24px;
+    line-height: 35px;
+}
+.myOrder li .setMealLeft p,.myOrder li .setMealTwo p{
+	font-size: 12px;
+}
+.myOrder li .setMealTwo p{
+
+}
+.myOrder li .setMealLeft p:last-child span:first-child,.myOrder li.setMealTwo .setMealLeft p:first-child,.myOrder li.setMealTwo .setMealLeft p:nth-child(2){
+	color: #333;
+	font-weight: bold;
+}
+.myOrder li .text-right{
+	color: #333;
+}
+.myOrder li .text-right span:last-child{
+	color:#EC6941;
+	font-size: 18px;
+	font-weight: 500;
+}
+.myOrder li .orderButton{
+	border-top: 1px solid #e7e7e7;
+    display: block;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-align: right;
+}
+.myOrder li .orderButton a button{
+	background: #88ABDA;
+	border-radius: 5px;
+	color: #fff;
+	padding: 5px 10px;
+	width: 76px;
+    text-align: center;
+	margin-left: 10px;
+	font-size: 12px;
+}
+.myOrder li.unpaid p.titleNum span:last-child{
+	color: #22AC38;
+}
+.myOrder li.unpaid .orderButton a:first-child button{
+	background: #ACD598;
+}
+.myOrder li.unpaid .orderButton a:last-child button{
+	background: #F29B76;
+}
 
 
 
