@@ -1286,7 +1286,21 @@ header p{
 .myOrder li.unpaid .orderButton a:last-child button{
 	background: #F29B76;
 }
-
+.contentFixed{
+	position: fixed;
+    left: 0;
+    z-index: 2;
+    background: #fefaf4;
+    width: 100%;
+}
+.padding-t-190{
+	padding-top: 190px;
+}
+.swiperTopFixed{
+	position: fixed;
+    z-index: 2;
+    top: 149px;
+}
 
 
 	
