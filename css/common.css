@@ -299,6 +299,9 @@ button{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+.height-100vh{
+	height: 100vh!important;
+}
 @media screen and ( max-width: 320px ) {
 	.hexagram .detailed .details p img {
 		width: 50px!important;

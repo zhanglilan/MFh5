@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/swiper-3.2.7.min.css">
 	<link rel="stylesheet" href="css/common.css" />
 	<link rel="stylesheet" href="css/mian.css" />
 	<title>app</title>
@@ -15,162 +16,210 @@
 			<a href="javascript:history.go(-1);"><img width="15" height="15" src="img/arrow.png" /></a>
 			<p class="flex-1 text-center m-l--15">名字推荐</p>
 		</header>
-		<section class="content">
-			<div class="">
-				<div class="titleTab">
-					<ul class="df ac jc text-center">
-						<li class="active flex-1">免费推荐</li>
-						<li class="flex-1">85-90分</li>
-						<li class="flex-1">90-99分</li>
-						<li class="flex-1">满分好名</li>
-					</ul>
+		<!-- swiper1 -->
+		<div class="container">
+			<div class="swiper-container swiper1 swiperOrder">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide selected">免费推荐</div>
+					<div class="swiper-slide">85-90分</div>
+					<div class="swiper-slide">90-99分</div>
+					<div class="swiper-slide">满分好名</div>
 				</div>
-				<div class="contentTab p-t-10">
-					<!--免费推荐-->
-					<div class="contentTabList p-l-r-10 show">
-						<ul class="freeRecommend">
-							<li>
-								<div class="df ac">
-									<div class="df nameResolutionContent">
-										<div class="df fc ac nameResolution">
-											<p>wáng</p>
-											<p>王</p>
-											<img width="18" height="12" src="img/nameOne.png">
+			</div>
+			<!-- swiper2 -->
+			<div class="swiper-container swiper2 padding-t-85">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<!--免费推荐-->
+						<div class="contentTabList p-l-r-10">
+							<ul class="freeRecommend">
+								<li>
+									<div class="df ac">
+										<div class="df nameResolutionContent">
+											<div class="df fc ac nameResolution">
+												<p>wáng</p>
+												<p>王</p>
+												<img width="18" height="12" src="img/nameOne.png">
+											</div>
+											<div class="df fc ac nameResolution">
+												<p>yuán</p>
+												<p>源</p>
+												<img width="16" height="12" src="img/nameTwo.png">
+											</div>
+											<div class="df fc ac nameResolution lastLine">
+												<p>bīn</p>
+												<p class="">宾</p>
+												<img width="12" height="12" src="img/nameThree.png">
+											</div>
 										</div>
-										<div class="df fc ac nameResolution">
-											<p>yuán</p>
-											<p>源</p>
-											<img width="16" height="12" src="img/nameTwo.png">
-										</div>
-										<div class="df fc ac nameResolution lastLine">
-											<p>bīn</p>
-											<p class="">宾</p>
-											<img width="12" height="12" src="img/nameThree.png">
-										</div>
-									</div>
-									<div class="flex-1 score">
-										<div class="text-center inlineBlock">
-											<p>82</p>
-											<p>综合评分</p>
-										</div>
-									</div>
-								</div>
-								<div class="collection">
-									<a href="#" class="df ac">
-										<img class="default" src="img/collectionDefault.png"/>
-										<img class="active" src="img/collectionActive.png"/>
-										<p>收藏</p>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="df ac">
-									<div class="df nameResolutionContent">
-										<div class="df fc ac nameResolution">
-											<p>wáng</p>
-											<p>王</p>
-											<img width="18" height="12" src="img/nameOne.png">
-										</div>
-										<div class="df fc ac nameResolution">
-											<p>yuán</p>
-											<p>源</p>
-											<img width="16" height="12" src="img/nameTwo.png">
-										</div>
-										<div class="df fc ac nameResolution lastLine">
-											<p>bīn</p>
-											<p class="">宾</p>
-											<img width="12" height="12" src="img/nameThree.png">
+										<div class="flex-1 score">
+											<div class="text-center inlineBlock">
+												<p>82</p>
+												<p>综合评分</p>
+											</div>
 										</div>
 									</div>
-									<div class="flex-1 score">
-										<div class="text-center inlineBlock">
-											<p>82</p>
-											<p>综合评分</p>
+									<div class="collection">
+										<a href="#" class="df ac">
+											<img class="default" src="img/collectionDefault.png"/>
+											<img class="active" src="img/collectionActive.png"/>
+											<p>收藏</p>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="df ac">
+										<div class="df nameResolutionContent">
+											<div class="df fc ac nameResolution">
+												<p>wáng</p>
+												<p>王</p>
+												<img width="18" height="12" src="img/nameOne.png">
+											</div>
+											<div class="df fc ac nameResolution">
+												<p>yuán</p>
+												<p>源</p>
+												<img width="16" height="12" src="img/nameTwo.png">
+											</div>
+											<div class="df fc ac nameResolution lastLine">
+												<p>bīn</p>
+												<p class="">宾</p>
+												<img width="12" height="12" src="img/nameThree.png">
+											</div>
+										</div>
+										<div class="flex-1 score">
+											<div class="text-center inlineBlock">
+												<p>82</p>
+												<p>综合评分</p>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="collection">
-									<a href="#" class="df ac">
-										<img class="default" src="img/collectionDefault.png"/>
-										<img class="active" src="img/collectionActive.png"/>
-										<p>收藏</p>
-									</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<!--85-90分-->
-					<div class="contentTabList p-l-r-10 hide">
-						<div class="recommendContent">
-							<h1>85-90分好名推荐</h1>
-							<p>分析宝宝生辰八字，精准分析，均衡五行，优选出吉祥好名字。</p>
-							<p>综合起名运用了生辰八卦、五格数理等多种起名算法，趋吉避凶。</p>
-							<p>根据音律、平仄变化、字形结构，搭配合理精选大气好名字。</p>
-							<p>唐诗宋词诗经楚辞，海量国学经典，多种选择，文字优雅，寓意深远。</p>
-							<div class="recommendButton">
-								<p>限时优惠<span class="c-red">18</span>元<span class="c-gray">(原价30元)</span></p>
-								<a href="起名支付.html"><button type="button">立即解锁</button></a>
-							</div>
-						</div>
-						<a href="起名支付.html" class="setMeal">
-							<button>限时<span>58</span>元&nbsp;立即解锁</button>
-						</a>  
-					</div>
-					<!--90-99分-->
-					<div class="contentTabList p-l-r-10 hide">
-						<div class="recommendContent upgrade">
-							<h1>85-90分好名推荐</h1>
-							<p>分析宝宝生辰八字，精准分析，均衡五行，优选出吉祥好名字。</p>
-							<p>综合起名运用了生辰八卦、五格数理等多种起名算法，趋吉避凶。</p>
-							<p>根据音律、平仄变化、字形结构，搭配合理精选大气好名字。</p>
-							<p>唐诗宋词诗经楚辞，海量国学经典，多种选择，文字优雅，寓意深远。</p>
-							<div class="recommendButton">
-								<p>限时优惠<span class="c-red">28</span>元<span class="c-gray">(原价40元)</span></p>
-								<a href="起名支付.html"><button type="button">立即解锁</button></a>
-							</div>
-						</div>
-						<a href="起名支付.html" class="setMeal">
-							<button>限时<span>58</span>元&nbsp;立即解锁</button>
-						</a>  
-					</div>
-					<!--满分好名-->
-					<div class="contentTabList p-l-r-10 hide">
-						<div class="recommendContent optimal">
-							<h1>天降吉名</h1>
-							<ul class="df fw">
-								<li><img src="img/recommendIcon1.png"/><p>高分吉名</p></li>
-								<li><img src="img/recommendIcon2.png"/><p>三才五格</p></li>
-								<li><img src="img/recommendIcon3.png"/><p>八字助运</p></li>
-								<li><img src="img/recommendIcon4.png"/><p>音律优美</p></li>
-								<li><img src="img/recommendIcon5.png"/><p>诗词寓意</p></li>
-								<li><img src="img/recommendIcon6.png"/><p>周易卦象</p></li>
-								<li><img src="img/recommendIcon7.png"/><p>生肖喜忌</p></li>
-								<li><img src="img/recommendIcon8.png"/><p>星座偏好</p></li>
+									<div class="collection">
+										<a href="#" class="df ac">
+											<img class="default" src="img/collectionDefault.png"/>
+											<img class="active" src="img/collectionActive.png"/>
+											<p>收藏</p>
+										</a>
+									</div>
+								</li>
 							</ul>
-							<div class="recommendButton">
-								<p>限时优惠<span class="c-red">38</span>元<span class="c-gray">(原价50元)</span></p>
-								<a href="起名支付.html"><button type="button">立即解锁</button></a>
+						</div>
+					</div>
+					<div class="swiper-slide" style="height: calc(100vh - 85px);">
+						<!--85-90分-->
+						<div class="contentTabList p-l-r-10 ">
+							<div class="recommendContent">
+								<h1>85-90分好名推荐</h1>
+								<p>分析宝宝生辰八字，精准分析，均衡五行，优选出吉祥好名字。</p>
+								<p>综合起名运用了生辰八卦、五格数理等多种起名算法，趋吉避凶。</p>
+								<p>根据音律、平仄变化、字形结构，搭配合理精选大气好名字。</p>
+								<p>唐诗宋词诗经楚辞，海量国学经典，多种选择，文字优雅，寓意深远。</p>
+								<div class="recommendButton">
+									<p>限时优惠<span class="c-red">18</span>元<span class="c-gray">(原价30元)</span></p>
+									<a href="起名支付.html"><button type="button">立即解锁</button></a>
+								</div>
 							</div>
 						</div>
 						<a href="起名支付.html" class="setMeal">
 							<button>限时<span>58</span>元&nbsp;立即解锁</button>
 						</a>  
+					</div>
+					<div class="swiper-slide " style="height: calc(100vh - 85px);">
+						<!--90-99分-->
+						<div class="contentTabList p-l-r-10 ">
+							<div class="recommendContent upgrade">
+								<h1>85-90分好名推荐</h1>
+								<p>分析宝宝生辰八字，精准分析，均衡五行，优选出吉祥好名字。</p>
+								<p>综合起名运用了生辰八卦、五格数理等多种起名算法，趋吉避凶。</p>
+								<p>根据音律、平仄变化、字形结构，搭配合理精选大气好名字。</p>
+								<p>唐诗宋词诗经楚辞，海量国学经典，多种选择，文字优雅，寓意深远。</p>
+								<div class="recommendButton">
+									<p>限时优惠<span class="c-red">28</span>元<span class="c-gray">(原价40元)</span></p>
+									<a href="起名支付.html"><button type="button">立即解锁</button></a>
+								</div>
+							</div>
+							<a href="起名支付.html" class="setMeal">
+								<button>限时<span>58</span>元&nbsp;立即解锁</button>
+							</a>  
+						</div>
+					</div>
+					<div class="swiper-slide" style="height: calc(100vh - 85px);">
+						<!--满分好名-->
+						<div class="contentTabList p-l-r-10">
+							<div class="recommendContent optimal">
+								<h1>天降吉名</h1>
+								<ul class="df fw">
+									<li><img src="img/recommendIcon1.png"/><p>高分吉名</p></li>
+									<li><img src="img/recommendIcon2.png"/><p>三才五格</p></li>
+									<li><img src="img/recommendIcon3.png"/><p>八字助运</p></li>
+									<li><img src="img/recommendIcon4.png"/><p>音律优美</p></li>
+									<li><img src="img/recommendIcon5.png"/><p>诗词寓意</p></li>
+									<li><img src="img/recommendIcon6.png"/><p>周易卦象</p></li>
+									<li><img src="img/recommendIcon7.png"/><p>生肖喜忌</p></li>
+									<li><img src="img/recommendIcon8.png"/><p>星座偏好</p></li>
+								</ul>
+								<div class="recommendButton">
+									<p>限时优惠<span class="c-red">38</span>元<span class="c-gray">(原价50元)</span></p>
+									<a href="起名支付.html"><button type="button">立即解锁</button></a>
+								</div>
+							</div>
+							<a href="起名支付.html" class="setMeal">
+								<button>限时<span>58</span>元&nbsp;立即解锁</button>
+							</a>  
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	</section>
 
 	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="js/swiper-3.4.0.jquery.min.js"></script>
 	<script>
-		$(function(){
-			 $('.titleTab').on('click', 'li', function() {
-	            var i = $(this).index();
-	            $(this).addClass('active').siblings().removeClass('active');
-	            $(".contentTab>div").eq(i).show().siblings().hide();
-	        });
-			$(".freeRecommend li").click(function(){
-				$(this).toggleClass("current");
+		$(function () {
+			function setCurrentSlide(ele, index) {
+				$(".swiper1 .swiper-slide").removeClass("selected");
+				ele.addClass("selected");
+				//swiper1.initialSlide=index;
+			}
+
+			var swiper1 = new Swiper('.swiper1', {
+				//设置slider容器能够同时显示的slides数量(carousel模式)。
+				//可以设置为number或者 'auto'则自动根据slides的宽度来设定数量。
+				//loop模式下如果设置为'auto'还需要设置另外一个参数loopedSlides。
+				slidesPerView: 4.5,
+				observer: true,
+				observeParents: true,
+				paginationClickable: true,//此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+				spaceBetween: 10,//slide之间的距离（单位px）。
+				freeMode: true,//默认为false，普通模式：slide滑动时只滑动一格，并自动贴合wrapper，设置为true则变为free模式，slide会根据惯性滑动且不会贴合。
+				loop: false,//是否可循环
+				onTab: function (swiper) {
+					var n = swiper1.clickedIndex;
+				}
+			});
+			swiper1.slides.each(function (index, val) {
+				var ele = $(this);
+				ele.on("click", function () {
+					setCurrentSlide(ele, index);
+					swiper2.slideTo(index, 500, false);
+					//mySwiper.initialSlide=index;
+				});
+			});
+
+			var swiper2 = new Swiper('.swiper2', {
+				//freeModeSticky  设置为true 滑动会自动贴合  
+				direction: 'horizontal',//Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)。
+				loop: false,
+				//					effect : 'fade',//淡入
+				//effect : 'cube',//方块
+				//effect : 'coverflow',//3D流
+				//					effect : 'flip',//3D翻转
+				autoHeight: true,//自动高度。设置为true时，wrapper和container会随着当前slide的高度而发生变化。
+				onSlideChangeEnd: function (swiper) {  //回调函数，swiper从一个slide过渡到另一个slide结束时执行。
+					var n = swiper.activeIndex;
+					setCurrentSlide($(".swiper1 .swiper-slide").eq(n), n);
+					swiper1.slideTo(n, 500, false);
+				}
 			});
 		});
 	</script>

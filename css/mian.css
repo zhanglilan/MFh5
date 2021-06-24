@@ -840,6 +840,26 @@ header p{
 	display: none!important;
 }
 /*名字推荐*/
+.swiper1.swiperOrder{
+	background: #fff;
+    box-shadow: none;
+	position: fixed;
+    z-index: 2;
+    top: 45px;
+	box-shadow: 0px 2px 15px 0px rgba(233, 212, 180, 0.5);
+}
+.swiper1.swiperOrder .swiper-slide{
+	color: #999;
+	flex: 1;
+}
+.swiper1.swiperOrder .selected {
+    border-bottom: 3px solid #EC5141;
+	font-weight: normal;
+}
+.padding-t-85{
+	padding-top: 85px;
+}
+
 .titleTab{
 	font-weight: 500;
 	color: #999;
@@ -847,28 +867,17 @@ header p{
     width: 100%;
     height: 40px;
 	line-height: 40px;
-	position: fixed;
 	top: 45px;
     padding: 0 15px;
 	z-index: 1;
+	box-shadow: none;
 }
 .titleTab ul li{
 	position: relative;
 }
-.titleTab ul li.active::before{
-	content: "";
-	background: #EC5141;
-	width: 100%;
-	height: 3px;
-	border-radius: 4px;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%,0);
-	bottom: 0;
-}
 .contentTabList {
 	margin: 15px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 .freeRecommend{
 }
@@ -939,6 +948,7 @@ header p{
 .recommendContent{
 	background: url(../img/recommendGg1.png);
 	background-size: 100% 100%;
+	width: 100%;
 }
 .recommendContent.upgrade{
 	background: url(../img/recommendGg2.png);
@@ -1023,7 +1033,7 @@ header p{
 	width: 100%;
 	height: 80px;
 	background-size: 100% 100%;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	text-align: right;
@@ -1299,7 +1309,7 @@ header p{
 .swiperTopFixed{
 	position: fixed;
     z-index: 2;
-    top: 149px;
+    top: 146px;
 }
 
 
